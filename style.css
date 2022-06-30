@@ -1,12 +1,17 @@
-body {
+html, body {
   background-color: whitesmoke;
   margin: 0px;
   padding: 0px;
+  height: 100%;
+  width: 100%;
 }
 h1 {
   font-size: 50px;
   color: #0066ff;
-
+}
+h2 {
+  font-size: 5vw;
+  margin-bottom: 15px;
 }
 
 /* Create a top navigation bar with a black background color  */
@@ -38,4 +43,63 @@ h1 {
   color: black;
   background-color: white;
   font-size: 3vw;
+}
+
+.sidebar {
+  width: 130px;
+  height: 100%;
+  /* outline: solid 3px black; */
+  background-color: #99ccff;
+  display: flex;
+  float: left;
+  align-items: center;
+}
+
+.content {
+  width: 500px;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.search-area {
+  border: 1px solid red;
+  overflow: hidden;
+}
+.search-box {
+  font-size: 4vw;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  height: 6vh;
+  width: 75vw;
+}
+#search-button {
+  font-size: 30px;
+  background-color: #006666;
+  color: white;
+}
+#search-button:hover {
+  background-color:  #00cccc;
+}
+
+.vertical-menu {
+  width: 130px;
+}
+
+.vertical-menu a {
+  background-color:  #bf8040;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: lightgrey;
+}
+
+.vertical-menu a.active {
+  background-color: whitesmoke;
+  color: black;
 }
